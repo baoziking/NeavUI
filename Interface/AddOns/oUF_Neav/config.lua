@@ -33,7 +33,7 @@ local FAILED_CAST_COLOR = {1.0, 0.0, 0.0} -- Failed / Interrupted Cast
 ns.Config = {
     show = {
         castbars = true,
-        classHealth = false,                                                                -- Colors health bars by player class color.
+        classHealth = true,                                                                -- Colors health bars by player class color.
         classPortraits = false,
         disableCooldown = false,                                                            -- Disable custom cooldown text to use addons like omnicc
         portraitTimer = true,
@@ -91,7 +91,7 @@ ns.Config = {
                     positionOutside = false,
                 },
 
-                position = {"BOTTOM", UIParent, "BOTTOM", 0, 170},
+                position = {"CENTER", UIParent, "CENTER", 10, -120},
             },
         },
 
@@ -113,7 +113,7 @@ ns.Config = {
             position = {43, -20},
 
             castbar = {
-                show = false,
+                show = true,
 
                 width = 220,
                 height = 19,
@@ -130,7 +130,7 @@ ns.Config = {
                     positionOutside = true,
                 },
 
-                position = {"TOP", oUF_Neav_Player, "BOTTOM", 0, -50},
+                position = {"BOTTOMRIGHT", oUF_Neav_Player, "TOPRIGHT", 0, -70},
 
                 ignoreSpells = true,                                                        -- Hides castbar for spells listed in "ignoreList"
                 ignoreList = {
@@ -218,7 +218,7 @@ ns.Config = {
             enableFocusToggleKeybind = true,
             focusToggleKey = "type4",                                                       -- type1, type2 (mousebutton 1 or 2, 3, 4, 5 etc. works too)
 
-            position = {"TOPLEFT", 250, -240},
+            position = {"LEFT", 30, 0},
 
             castbar = {
                 show = true,
@@ -235,7 +235,7 @@ ns.Config = {
                 icon = {
                     show = true,
                     position = "LEFT",
-                    positionOutside = false,
+                    positionOutside = true,
                 },
             },
         },
@@ -249,7 +249,7 @@ ns.Config = {
         },
 
         ["party"] = {
-            scale = 1.193,
+            scale = 1.11,
             show = true,
             hideInRaid = true,
 
