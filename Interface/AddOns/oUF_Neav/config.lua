@@ -185,7 +185,7 @@ ns.Config = {
                     positionOutside = false,
                 },
 
-                position = {"BOTTOM", UIParent, "BOTTOM", 0, 205},
+                position = {"CENTER", UIParent, "CENTER", 10, 0},
             },
         },
 
